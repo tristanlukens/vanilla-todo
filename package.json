@@ -1,0 +1,15 @@
+{
+  "name": "toodoo-vanilla",
+  "version": "0.0.1",
+  "description": "A vanilla todo app in HTML, SCSS and TypeScript.",
+  "main": "script.js",
+  "scripts": {
+    "dev": "tsc -w",
+    "build": "tsc"
+  },
+  "author": "Tristan Lukens",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^4.6.2"
+  }
+}

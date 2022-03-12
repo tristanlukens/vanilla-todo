@@ -1,0 +1,105 @@
+// google fonts: roboto 400 and 700
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+// reset
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// variables
+$col-text-base: #2b2b2b; // defaults
+$col-fill: #eee;
+$col-accent: #34d399; // tailwind: emerald 400
+
+body {
+  font-family: "Roboto", sans-serif;
+
+  color: $col-text-base;
+  background: $col-fill;
+}
+
+// styling
+
+// layout
+body {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: repeat(6, 1fr);
+  height: 100vh;
+}
+
+.top {
+  grid-row: 1 / 2;
+}
+
+.bottom {
+  grid-row: 2 / 7;
+}
+
+.top,
+.bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+// this isn't really a form!!
+.form {
+  display: flex;
+  gap: 0.2rem;
+  margin-bottom: 2rem;
+}
+
+// input
+input {
+  padding: 0.8rem 1.6rem;
+  border-radius: 0.4rem;
+  border: 2px $col-accent solid;
+}
+
+// todo list
+.bottom ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+// todo
+.bottom ul li {
+  list-style-type: none;
+  background: $col-accent;
+  color: $col-fill;
+  border-radius: 0.4rem;
+  width: 70vw;
+  max-width: 30rem;
+  padding: 0.8rem 1.6rem;
+}
+
+// logo
+h1 {
+  font-size: 3rem;
+
+  span {
+    color: $col-accent;
+  }
+}
+
+// button
+button {
+  padding: 0.4rem;
+  background: $col-accent;
+  border: none;
+  color: $col-fill;
+  border-radius: 0.4rem;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}

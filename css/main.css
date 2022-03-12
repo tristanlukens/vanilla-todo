@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #2b2b2b;
+  background: #eee;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1;
+      grid-template-columns: 1;
+  -ms-grid-rows: (1fr)[6];
+      grid-template-rows: repeat(6, 1fr);
+  height: 100vh;
+}
+
+.top {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+}
+
+.bottom {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 5;
+  grid-row: 2 / 7;
+}
+
+.top,
+.bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.2rem;
+  margin-bottom: 2rem;
+}
+
+input {
+  padding: 0.8rem 1.6rem;
+  border-radius: 0.4rem;
+  border: 2px #34d399 solid;
+}
+
+.bottom ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.8rem;
+}
+
+.bottom ul li {
+  list-style-type: none;
+  background: #34d399;
+  color: #eee;
+  border-radius: 0.4rem;
+  width: 70vw;
+  max-width: 30rem;
+  padding: 0.8rem 1.6rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h1 span {
+  color: #34d399;
+}
+
+button {
+  padding: 0.4rem;
+  background: #34d399;
+  border: none;
+  color: #eee;
+  border-radius: 0.4rem;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+/*# sourceMappingURL=main.css.map */
